@@ -3,3 +3,7 @@ p {
     color: navy;
     font-family: serif;
 }
+
+main {
+    padding: 2rem;
+}
