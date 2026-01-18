@@ -1,23 +1,64 @@
+/* color changes for whole website */
 :root {
-    --bg: #ffffff;
-    --text: #2d3436;
-    --accent: #0984e3;
-    --gray: #f5f6fa;
-    --line-height: 1.6;
+    --background-color: #ffffff; 
+    --text-color: #B6AE9F;       /* Main text color */
+    --accent-color: #C5C7BC;     /* Color for links and buttons */
+    --max-width: 800px;          /* Limits how wide your text gets */
 }
 
-main, nav {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
+/* page layout */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: var(--line-height);
-    color: var(--text);
-    background-color: var(--bg);
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+    /* centering content, and margins */
+    max-width: var(--max-width);
+    margin: 0 auto; 
+    padding: 2rem;
+    
+    /* fonts */
+    font-family: sans-serif; 
+    line-height: 1.6; /* Adds space between lines of text */
+}
+
+/* headings & paragraphs */
+h1, h2, h3 {
+    color: var(--text-color);
+    margin-top: 1.5em; /* Adds space above headings */
+    font-weight: bold
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    font-weight: bolder
+}
+
+p {
+    margin-bottom: 1.2rem; /* space between paragraphs */
+}
+
+/* links & buttons */
+a {
+    color: var(--accent-color);
+    text-decoration: none; /* Removes the default underline */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline only appears when hovering */
+    color: #A5A69A; /* color on hover */
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #F0F0EB;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* rounded corners */
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(90%); /* Makes the button slightly darker when hovered */
 }
