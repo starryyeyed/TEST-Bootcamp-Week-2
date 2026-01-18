@@ -68,15 +68,7 @@ button:hover {
     filter: brightness(90%); /* Makes the button slightly darker when hovered */
 }
 
-.list-container-flex {
-  display: flex;
-  justify-content: center; 
-  align-items: center;    
-  flex-direction: column;  
-}
-
-.list-container-flex ul {
-  padding-left: 0; 
-  text-align: center;
-  list-style-position: inside;
+ul {
+    text-align: center;
+    list-style-position: inside;
 }
