@@ -67,3 +67,30 @@ button {
 button:hover {
     filter: brightness(90%); /* Makes the button slightly darker when hovered */
 }
+
+/* Navigation Bar */
+#navbar ul {
+    list-style-type: none;
+    background-color: var(--accent-color); /* Matches your buttons/links */
+    padding: 10px;
+    display: flex; 
+    justify-content: center; 
+    gap: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#navbar a {
+    color: #F0F0EB;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif; 
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#navbar a:hover {
+    color: #ffffff;           /* Pure white on hover */
+    text-decoration: none;  
+}
